@@ -1,12 +1,27 @@
 body {
     background: lightblue;
 }
+/* trying to get the heading and list to go in a row */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 1%;
+    flex-direction: row;
+    background-color: cadetblue;
+    color:blueviolet;
+}
 
+header aside h3 {
+    float: right;
+    padding: 15px;
+    align-items: flex-end;
+}
 h1 {
 color:azure;
 margin-left: auto;
-padding: 20%
-font-size: 150px;
+padding: auto;
+font-size: 100px;
 font-family:Arial, Helvetica, sans-serif,
 }
 
@@ -14,16 +29,29 @@ h2 {
  color:blueviolet;
  margin:auto;
  padding: 5%;
- font-size: medium;
+ font-size: 50px;
  font-family:Arial, Helvetica, sans-serif;
+ flex-direction: column;
+
+}
+
+article h2 {
+    width: 10%;
+    height: 40px;
 }
 
 .nav ul {
     display:flex;
     justify-content: space-between;
+    flex-direction: row;
+    font-family:Arial, Helvetica, sans-serif;
+
 
 }
 
+nav ul:hover{
+    color:coral
+}
 h3 {
     color:aqua;
     margin: auto;
@@ -32,17 +60,29 @@ h3 {
     font-family:Arial, Helvetica, sans-serif
 
 }
+/*  
 aside h3 {
-    width:auto
+    width:auto;
+    float: right;
+    padding: 15px;
     
 }
-
+ */
 section  {
     flex: 1 1 0;
     padding-left: 5%
 
 }
-/*  
+.container {
+    position:relative;
+    text-align: left;
+    color: black;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
 div p {
     display: block;
     flex-direction: row;
@@ -50,10 +90,5 @@ div p {
     text-decoration:underline;
     align-items: flex-start;
 }
-  */
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-    text-decoration: underline;
-    align-items: flex-start;
-  }
+  
+ 
