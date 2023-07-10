@@ -23,6 +23,7 @@ margin-left: auto;
 padding: auto;
 font-size: 100px;
 font-family:Arial, Helvetica, sans-serif;
+border: 5%;
 }
 
 h2 {
@@ -35,7 +36,7 @@ h2 {
 
 }
 
-article h2 {
+.article h2 {
     width: 1px;
     height: 1px;
 }
@@ -54,7 +55,6 @@ div .container{
     flex-direction: row;
     font-family:Arial, Helvetica, sans-serif;
 
-
 }
 
 nav ul:hover{
@@ -68,18 +68,22 @@ h3 {
     font-family:Arial, Helvetica, sans-serif;
 
 }
-/*  
+
 aside h3 {
     width:auto;
     float: right;
     padding: 15px;
     
 }
- */
+ 
 section  {
     flex: 1 1 0;
     padding-left: 5%;
 
+}
+.content{
+    flex-direction: row;
+    align-content:baseline;
 }
 .container {
     position:relative;
