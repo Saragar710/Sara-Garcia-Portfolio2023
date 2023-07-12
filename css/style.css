@@ -23,6 +23,13 @@ font-family:Arial, Helvetica, sans-serif;
 border: 5%;
 }
 
+.Projects{
+    background-color: teal;
+    width: 200%;
+    height:100%;
+    text-align: bottom left;
+
+}
 h2 {
  color:blueviolet;
  margin:auto;
@@ -91,7 +98,7 @@ section  {
 .content{
     display: flex;
     flex-direction: row;
-    align-content:baseline;
+    /* align-content:baseline; */
     flex-wrap: wrap;
 }
 .container {
@@ -100,9 +107,9 @@ section  {
     color: black;
 }
 .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+    
+    /* bottom: 8px;
+    left: 16px; */
 }
 div p {
     display: block;
@@ -112,9 +119,37 @@ div p {
     align-items: flex-start;
 }
   
- div .content{
+.content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: baseline;
  }
+ #Surf{
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/17/14/33/wave-1913559_1280.jpg");
+    width: 400px;
+    height: 400px;
+}
+#Forest{
+ background-image: url("https://cdn.wallpapersafari.com/53/67/un65HA.jpg");
+ width: 400px;
+ height: 400px;
+}
+
+#Calculator {
+    background-image: url("https://images.unsplash.com/photo-1625225233840-695456021cde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+    width: 400px;
+    height: 400px;
+}
+
+#Pastel {
+    background-image: url("https://media.istockphoto.com/id/1394663855/photo/puzzle-pieces-in-tunnel-of-light.webp?b=1&s=170667a&w=0&k=20&c=xwcXP5uTAH5R115HSFGwtZFaUR7R6wlnj04ON4NQ03k=");
+    width: 400px;
+    height: 400px;
+}
+
+#Run {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0KjNw8FiUgbLIxElVLvRK0oX3KYMVQEow28_BGVgR-H_jx_sYDVGLBpz-bTi91QlCSo&usqp=CAU" ");
+    width: 400px;
+    height: 400px;
+}
