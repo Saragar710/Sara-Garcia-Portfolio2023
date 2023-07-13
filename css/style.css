@@ -1,8 +1,13 @@
+{
+    box-sizing: border-box;
+}
+
 body {
     background: lightblue;
 }
 /* trying to get the heading and list to go in a row */
 header {
+
     display:flex;
     justify-content: space-between;
     align-content: flex-end;
@@ -24,10 +29,12 @@ border: 5%;
 }
 
 .Projects{
-    background-color: teal;
+    /* background-color: teal; */
     width: 200%;
     height:100%;
     text-align: bottom left;
+    padding: 20%;
+    width:auto;
 
 }
 h2 {
@@ -47,7 +54,7 @@ margin-top: 300px;
 }
 
 
-article h2 {
+ h2 {
     width: 1px;
     height: 1px;
 }
@@ -74,7 +81,6 @@ nav :hover{
     color:coral;
 }
 h3 {
-    color:aqua;
     margin: auto;
     padding: 20%;
     font-size: medium;
@@ -90,6 +96,9 @@ aside h3 {
 }
  
 section  {
+    padding: 10px;
+    border: 20px;
+    margin: 15px;
     flex: 1 1 0;
     padding-left: 5%;
 
@@ -101,22 +110,31 @@ section  {
     flex-wrap: wrap;
 }
 .container {
+    margin: 100px;
+    padding: 70px;
     position:relative;
     text-align: left;
     color: black;
+    display: flex;
+    
+}
+.item {
+    flex-item: 3,2,2,1;
+    flex-direction: column;
+    flex-order: 1;
 }
 .bottom-left {
     
     bottom: 8px;
     left: 16px;
 }
-div p {
+/* div p {
     display: block;
     flex-direction: row;
     justify-content: space-evenly;
     text-decoration:underline;
     align-items: flex-start;
-}
+} */
   
 .content{
     display: flex;
@@ -152,3 +170,20 @@ div p {
     width: 400px;
     height: 400px;
 }
+
+.container{
+    box-sizing: border-box;
+    border: solid;
+    margin: 70px;
+    padding: 70px;
+    height: 100px,
+    width: 70%;
+}
+#Surf, #Forest, #alculator, #Pastel-Puzzle, #Run-Buddy {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+}
+#Surf, #Forest, #Calculator, #Pastel-Puzzle, #Run-buddy h2{
+
+} 
