@@ -51,12 +51,11 @@ article h2 {
     width: 1px;
     height: 1px;
 }
-img article h2 {
+/* img article h2 {
     padding: 1px;
     margin: 1px;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 
-}
 div .container{
     align-items: stretch;
 }
@@ -64,7 +63,7 @@ nav {
     display:flex; 
     /* justify-content: space-between; */
     flex-direction: row;
-    font-family:Arial, Helvetica, sans-serif; */
+    font-family:Arial, Helvetica, sans-serif; 
     flex-wrap: wrap;
 
 }
@@ -108,8 +107,8 @@ section  {
 }
 .bottom-left {
     
-    /* bottom: 8px;
-    left: 16px; */
+    bottom: 8px;
+    left: 16px;
 }
 div p {
     display: block;
@@ -149,7 +148,7 @@ div p {
 }
 
 #Run {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0KjNw8FiUgbLIxElVLvRK0oX3KYMVQEow28_BGVgR-H_jx_sYDVGLBpz-bTi91QlCSo&usqp=CAU" ");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0KjNw8FiUgbLIxElVLvRK0oX3KYMVQEow28_BGVgR-H_jx_sYDVGLBpz-bTi91QlCSo&usqp=CAU");
     width: 400px;
     height: 400px;
 }
