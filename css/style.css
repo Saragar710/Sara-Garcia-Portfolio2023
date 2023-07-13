@@ -1,7 +1,8 @@
-{
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
 body {
     background: lightblue;
 }
@@ -55,6 +56,7 @@ margin-top: 300px;
 
 
  h2 {
+    border: 10px;
     width: 1px;
     height: 1px;
 }
@@ -92,6 +94,7 @@ aside h3 {
     width:auto;
     float: right;
     padding: 15px;
+    font-size: 20%;
     
 }
  
@@ -118,8 +121,11 @@ section  {
     display: flex;
     
 }
-.item {
-    flex-item: 3,2,2,1;
+#About .container {
+    background-image: url("https://i.pinimg.com/originals/f6/f8/93/f6f89358586c1ecf97ef08e2cb726d80.jpg") ;
+    padding-left: 5%;
+    display: flexbox;
+    align-self: auto;
     flex-direction: column;
     flex-order: 1;
 }
@@ -135,22 +141,30 @@ section  {
     text-decoration:underline;
     align-items: flex-start;
 } */
+.flex-container {
+display: flex;
+flex-direction: column;
+}
   
-.content{
+div .content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: baseline;
+    flex-wrap: nowrap;
+    align-content:stretch ;
+    justify-content: space-around;
  }
+ 
  #Surf{
     background-image: url("https://cdn.pixabay.com/photo/2016/12/17/14/33/wave-1913559_1280.jpg");
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
 }
 #Forest{
- background-image: url("https://cdn.wallpapersafari.com/53/67/un65HA.jpg");
- width: 400px;
- height: 400px;
+   background-image: url("https://cdn.wallpapersafari.com/53/67/un65HA.jpg");
+   width: 400px;
+   height: 400px;
 }
 
 #Calculator {
@@ -185,5 +199,6 @@ section  {
     height: 300px;
 }
 #Surf, #Forest, #Calculator, #Pastel-Puzzle, #Run-buddy h2{
-
+background-size: 300px 300px;
+flex-direction: stretch;
 } 
