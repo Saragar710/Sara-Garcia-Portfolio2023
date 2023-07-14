@@ -252,8 +252,22 @@ flex-direction: column;
     padding: 50px;
     height: 300px;
 }
-/* }
-#Surf, #Forest, #Calculator, #Pastel-Puzzle, #Run-buddy h2{
-background-size: 300px 300px;
-flex-direction: stretch;
-}  */
+/* header changes color */
+@media screen and (max-width:992px) {
+    header {
+    background-color: light pink;
+  }
+}
+/* screens 768px or less nav turns color */
+@media screen and (max-width:768px) {
+    nav {
+        background-color:chartreuse;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        width: 100%;
+        background-color: chocolate;
+    }
+}
