@@ -23,7 +23,7 @@ header {
 h1 {
 color:azure;
 margin-left: auto;
-padding: 150px;
+padding: 1px;
 font-size: 100px;
 font-family:Arial, Helvetica, sans-serif;
 border: 20%;
@@ -121,23 +121,29 @@ section  {
     align-content:flex-start;
     
 }
-/* .container {
+.container {
     margin: 100px;
     padding: 70px;
-    position:relative;
+    /* position:relative; */
     text-align: left;
     color: black;
-    display: flex;
-    
-} */
-#About .container {
-    background-image: url("https://i.pinimg.com/originals/f6/f8/93/f6f89358586c1ecf97ef08e2cb726d80.jpg") ;
+    flex-grow: 1,2,2,3,2;
+    /* display: flex;
+     */
+}
+#About  {
+   background-image: url("https://i.pinimg.com/originals/f6/f8/93/f6f89358586c1ecf97ef08e2cb726d80.jpg") ;
+   width: 75%;
+   background-repeat: no-repeat;
+
+}
+.container {
     padding: 5%;
     display: flexbox;
     align-self: auto;
     flex-direction: column;
     float:right;
-    
+
 }
 .bottom-left {
     font-size: 20%;
@@ -169,7 +175,7 @@ flex-direction: column;
     padding: 20px auto;
 }
 #Calculator, .Projects{
-    width:200%;
+    width:75%;
     height:50%;
     overflow: auto;
     margin: 20px, auto;
@@ -211,14 +217,14 @@ flex-direction: column;
     background-size:auto;
 }
 
-#Pastel {
+#Pastel-Puzzle {
     background-image: url("https://media.istockphoto.com/id/1394663855/photo/puzzle-pieces-in-tunnel-of-light.webp?b=1&s=170667a&w=0&k=20&c=xwcXP5uTAH5R115HSFGwtZFaUR7R6wlnj04ON4NQ03");
     width: 400px;
     height: 400px;
     background-size:auto;
 }
 
-#Run {
+#Run-Buddy{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0KjNw8FiUgbLIxElVLvRK0oX3KYMVQEow28_BGVgR-H_jx_sYDVGLBpz-bTi91QlCSo&usqp=CAU");
     width: 400px;
     height: 400px;
