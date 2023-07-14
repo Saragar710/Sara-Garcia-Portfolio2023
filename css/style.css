@@ -1,8 +1,8 @@
-* {
+/* * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+} */
 body {
     background: lightblue;
 }
@@ -23,22 +23,28 @@ header {
 h1 {
 color:azure;
 margin-left: auto;
-padding: auto;
+padding: 150px;
 font-size: 100px;
 font-family:Arial, Helvetica, sans-serif;
-border: 5%;
+border: 20%;
+align-items: flex-end;
+
 }
 
 .Projects{
     /* background-color: teal; */
-    width: 200%;
-    height:100%;
+    width: 150%;
+    height:150%;
     text-align: bottom left;
     padding: 20%;
     width:auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 100%;
+    align-content: stretch;
 
 }
-h2 {
+/* h2 {
  color:blueviolet;
  margin:auto;
  padding: 5%;
@@ -46,7 +52,7 @@ h2 {
  font-family:Arial, Helvetica, sans-serif;
  flex-direction: column;
 
-}
+} */
 aside {
     /* float: right; */
 margin-top: 300px;
@@ -55,11 +61,11 @@ margin-top: 300px;
 }
 
 
- h2 {
+ /* h2 {
     border: 10px;
     width: 1px;
     height: 1px;
-}
+} */
 /* img article h2 {
     padding: 1px;
     margin: 1px;
@@ -85,7 +91,7 @@ nav :hover{
 h3 {
     margin: auto;
     padding: 20%;
-    font-size: medium;
+    font-size: 20%;
     font-family:Arial, Helvetica, sans-serif;
 
 }
@@ -106,13 +112,16 @@ section  {
     padding-left: 5%;
 
 }
-.content{
+.content h2{
     display: flex;
     flex-direction: row;
     /* align-content:baseline; */
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:flex-start;
+    
 }
-.container {
+/* .container {
     margin: 100px;
     padding: 70px;
     position:relative;
@@ -120,17 +129,18 @@ section  {
     color: black;
     display: flex;
     
-}
+} */
 #About .container {
     background-image: url("https://i.pinimg.com/originals/f6/f8/93/f6f89358586c1ecf97ef08e2cb726d80.jpg") ;
-    padding-left: 5%;
+    padding: 5%;
     display: flexbox;
     align-self: auto;
     flex-direction: column;
-    flex-order: 1;
+    float:right;
+    
 }
 .bottom-left {
-    
+    font-size: 20%;
     bottom: 8px;
     left: 16px;
 }
@@ -141,48 +151,78 @@ section  {
     text-decoration:underline;
     align-items: flex-start;
 } */
-.flex-container {
+/* .flex-container {
 display: flex;
 flex-direction: column;
+} */
+#Surf .Projects{
+    width: 95%;
+    overflow:hidden;
+    margin-top: 20px auto;
+    padding: 20px auto;
+
 }
-  
-div .content {
+#Forest .Projects{
+    width: 75%;
+    overflow: auto;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+#Calculator, .Projects{
+    width:200%;
+    height:50%;
+    overflow: auto;
+    margin: 20px, auto;
+    padding: 20px auto;
+}
+#Pastel-Puzzle, .Projects{
+    width: 100%;
+    overflow: auto;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+ div .class, .Projects,.content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content:stretch ;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    justify-content: flex-start;
  }
  
  #Surf{
     background-image: url("https://cdn.pixabay.com/photo/2016/12/17/14/33/wave-1913559_1280.jpg");
     /* width: 400px;
     height: 400px; */
-    background-size: 400px 300px;
+    border-image-outset:0cap;
     background-repeat: no-repeat;
+    
 }
 #Forest{
    background-image: url("https://cdn.wallpapersafari.com/53/67/un65HA.jpg");
-   width: 400px;
-   height: 400px;
+   width: 100%;
+   height: 100%;
+   background-size:absolute;
 }
 
 #Calculator {
     background-image: url("https://images.unsplash.com/photo-1625225233840-695456021cde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
     width: 400px;
     height: 400px;
+    background-size:auto;
 }
 
 #Pastel {
-    background-image: url("https://media.istockphoto.com/id/1394663855/photo/puzzle-pieces-in-tunnel-of-light.webp?b=1&s=170667a&w=0&k=20&c=xwcXP5uTAH5R115HSFGwtZFaUR7R6wlnj04ON4NQ03k=");
+    background-image: url("https://media.istockphoto.com/id/1394663855/photo/puzzle-pieces-in-tunnel-of-light.webp?b=1&s=170667a&w=0&k=20&c=xwcXP5uTAH5R115HSFGwtZFaUR7R6wlnj04ON4NQ03");
     width: 400px;
     height: 400px;
+    background-size:auto;
 }
 
 #Run {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0KjNw8FiUgbLIxElVLvRK0oX3KYMVQEow28_BGVgR-H_jx_sYDVGLBpz-bTi91QlCSo&usqp=CAU");
     width: 400px;
     height: 400px;
+    background-size:auto;
 }
 
 .container{
@@ -191,14 +231,16 @@ div .content {
     margin: 70px;
     padding: 70px;
     height: 100px,
-    width: 70%;
+    
 }
-#Surf, #Forest, #alculator, #Pastel-Puzzle, #Run-Buddy {
+
+#Surf, #Forest, #Calculator, #Pastel-Puzzle, #Run-Buddy {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
 }
+/* }
 #Surf, #Forest, #Calculator, #Pastel-Puzzle, #Run-buddy h2{
 background-size: 300px 300px;
 flex-direction: stretch;
-} 
+}  */
